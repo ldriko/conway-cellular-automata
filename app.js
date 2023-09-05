@@ -31,16 +31,7 @@ const createCanvas = (width, height) => {
 const drawCell = (grid, i, j) => {
   const ctx = canvas.dom.getContext('2d');
 
-  if (grid[i][j] === 0) {
-    // ctx.rect(
-    //   canvas.cellRes * j,
-    //   canvas.cellRes * i,
-    //   canvas.cellRes,
-    //   canvas.cellRes
-    // );
-    // ctx.stroke();
-    return;
-  }
+  if (grid[i][j] === 0) return;
 
   ctx.fillStyle = '#000000';
   ctx.fillRect(
