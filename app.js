@@ -85,7 +85,7 @@ const generate = () => {
 
   grid = next;
 
-  setTimeout(generate, 500);
+  setTimeout(generate, 100);
 };
 
 const init = () => {
@@ -98,7 +98,7 @@ const init = () => {
 
   drawGrid(grid);
 
-  setTimeout(generate, 500);
+  setTimeout(generate, 100);
 };
 
 init();
